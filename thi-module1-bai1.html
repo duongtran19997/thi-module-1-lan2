@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<script>
+    let array=[2,3,5,8,7,9,10];
+    function checkPoint(array){//kiem tra so lon thu 3
+        let max = array[0];
+        let count=0;
+        for (let i = 0; i<array.length;i++){//sap xep mang theo thu tu nho dan
+            if(array[i]>max){
+                max=array[i];
+                array[count]=array[i];
+                count++
+            }
+        }
+        alert('số lớn thứ 3 là'+array[2])//goi so lon thu 3
+    }
+    checkPoint(array)//goi ham
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    let array = [1, 3, 5, 2, 7, 9, 10]
+    let index = 7;
+
+    function tryRemoveFromArray(array, index) {//tao function
+        if (index < array.length) {//dieu kien index < chieudai mang
+            for (let i = 0; i < array.length; i++) {//chay vong for thay the phan tu trong vi tri index
+
+                array[index] = array[index + 1];
+                index++;
+            }
+            array.pop()//cat bot phan tu cuoi
+        }
+
+
+        document.write('array=' + array);
+    }
+
+    tryRemoveFromArray(array, index)
+</script>
+</body>
+</html>
